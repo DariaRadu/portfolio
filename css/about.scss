@@ -1,0 +1,62 @@
+#about{
+  padding-top:5vh;
+  padding-bottom:7vh;
+  background-color:$bubbles;
+  perspective: 1000;
+  h2{
+    margin:0;
+    padding-top:3vh;
+  }
+  p,h3{
+    margin-left:15%;
+    margin-right:10%;
+  }
+  .container-fluid{
+    max-width:100%;
+    padding-top:50px;
+  }
+}
+
+#organized{
+  margin-left:13%;
+}
+
+.profile-pic{
+  @include center-image();
+  max-width:300px;
+}
+
+.about-desc{
+  margin-top:5vh;
+}
+
+#card{
+  width: 300px;
+  height: 300px;
+  margin-top:15%;
+  margin-bottom:10%;
+  transform-style: preserve-3d;
+  transition: all 0.7s linear;
+  box-shadow: -5px 5px 5px #aaa;
+  &:hover{
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+  }
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid $yankeesblue;
+}
+
+.front .back {
+  transform: rotateY(180deg);
+}
+
+//drawings
+.not-visible{
+  opacity:0;
+}

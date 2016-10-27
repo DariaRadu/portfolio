@@ -1,0 +1,27 @@
+#contact {
+  padding-bottom:10vh;
+  background-color:$yankeesblue;
+  color: white;
+  a {
+    @include links (white);
+  }
+
+  h2 {
+    margin-top: 5vh;
+  }
+
+  .row {
+    margin-top: 5vh;
+  }
+
+  .container{
+    img {
+      height: 70px;
+      width: 70px;
+      margin-bottom:5%;
+      &:hover{
+        cursor:pointer;
+      }
+    }
+  }
+}

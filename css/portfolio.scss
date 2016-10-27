@@ -1,0 +1,168 @@
+#portfolio{
+  padding-top:5vh;
+  padding-bottom:15vh;
+  background-color:$bubbles;
+  .container-fluid{
+    margin-top:5vh;
+    width:100%;
+    .col-md-2{
+      padding:0;
+    }
+  }
+}
+
+.portfolio-pic{
+  width:150%;
+  @include center-image();
+}
+
+//modals
+.modal-content{
+  border-radius: 0;
+  background-color:$yankeesblue;
+  color:white;
+
+  .modal-body{
+    padding-top:4%;
+    p{
+      margin-right:5%;
+      margin-left:5%;
+    }
+  }
+
+  .modal-title{
+    text-align:center;
+  }
+}
+//center modals
+.modal {
+  text-align: center;
+}
+
+@media only screen and (min-width:992px){
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+
+//styling inside modals
+
+.modal-img{
+  @include center-image();
+  max-width:80%;
+  padding-bottom:4%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-lg {
+    width: 70%; /* either % (e.g. 60%) or px (400px) */
+  }
+}
+//
+
+.tint {
+  position: relative;
+  cursor: pointer;
+  margin-bottom:0;
+  border-left:0.5px solid $lightergray;
+  &:before {
+    content: "";
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: $nyanza;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:after {
+    content: "";
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  &:hover:after {
+    content: attr(data-content);
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.3);
+    bottom:0;
+  }
+
+  &:hover:before {
+    opacity: 0.7;
+  }
+}
+
+.btn-more {
+  width: 100%;
+  border-radius: 0%;
+  background-color: $yankeesblue;
+  color: white;
+  border-left:0.5px solid $lightergray;
+  font-size:96%;
+}
+//carousel
+
+.carousel{
+  @include center-image();
+  img{
+    @include center-image();
+  }
+  max-width:70%;
+  margin-bottom:4%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel-indicators li { visibility: hidden; }
+
+.carousel-inner .item {
+  font-size:10px;
+  color:#0404B4
+}
+
+.carousel-control {
+  z-index: 10;
+  top: 2%;
+  width: 30px; // no more gray thing
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.carousel-control.left,
+.carousel-control.right { background: none }
+// change it according to your needs
+.carousel-control.left { left: -50px; }
+.carousel-control.right { right: -50px; }
+
+
+#smCarousel{
+  .carousel-inner>.item>img{
+    max-width:30%!important;
+  }
+  .carousel-control.left { left: 20px; }
+  .carousel-control.right { right: 20px; }
+}

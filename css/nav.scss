@@ -1,0 +1,55 @@
+#menu{
+  display:none;
+  transition: all 0.5s linear;
+}
+
+.navbar-inverse{
+  background-color:$yankeesblue;
+  color:white;
+}
+
+.navigation{
+  border-radius:0;
+  margin:0;
+  z-index:2;
+  font-weight:bolder;
+
+  .navigation-nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin-right:10vh;
+  }
+
+  text-align: center;
+}
+
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+.navbar-nav { -webkit-backface-visibility: hidden; }

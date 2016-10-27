@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iDAAiD;EAC/C,eAAe;IACb,gBAAgB,EAAC,6BAA6B",
+"sources": ["mobile.scss"],
+"names": [],
+"file": "mobile.css"
+}

@@ -1,0 +1,27 @@
+#skills{
+  background-color:$paleaqua;
+  padding-bottom:15vh;
+  padding-top:5vh;
+  p{
+   @include margin_sides(15%);
+  }
+}
+
+#chartContainer{
+  height:300px;
+  margin:auto;
+}
+
+.stickman{
+  @include center-image();
+  position:relative;
+  top:-20px;
+  width:85%;
+
+}
+
+.stickman2{
+  @include center-image();
+  width:80%;
+
+}
