@@ -7,11 +7,15 @@
     width: 100%;
   }
 
+  #chartContainer, #chartContainer2{
+    height:300px;
+  }
 }
 
 @media only screen and (max-width:992px) {
 
   //general
+
   h3, p {
     margin-right: 5%;
     margin-left: 5%;
@@ -19,6 +23,13 @@
 
   p {
     font-size: 100%;
+  }
+
+  .main-button{
+    width:300px;
+    a{
+      font-size:15px;
+    }
   }
 
   //portfolio
@@ -86,5 +97,10 @@
     }
   }
 
+//for big screens
 
-
+@media only screen and (min-width: 1920px) {
+  p{
+    font-size:120%;
+  }
+}

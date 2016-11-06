@@ -70,7 +70,7 @@ $(document).ready(function() {
                 },
                 data: [
                     {
-                        indexLabelFontSize: 26,
+                        indexLabelFontSize: 22,
                         //indexLabelOrientation: "vertical",
                         toolTipContent: "<span style='\"'color: {color};'\"'><strong>{label}</strong></span><span style='\"'font-size: 20px; color:peru '\"'></span>",
 

@@ -49,11 +49,20 @@
   background-color: #102542;
   color: white; }
 
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+  color: white !important;
+  background-color: #102542 !important;
+  opacity: 1; }
+
+.navbar-nav a:focus {
+  opacity: no; }
+
 .navigation {
   border-radius: 0;
   margin: 0;
   z-index: 2;
-  font-weight: boldere;
+  font-weight: bolder;
   text-align: center; }
   .navigation .navigation-nav {
     display: inline-block;
@@ -84,6 +93,11 @@
 
 .navbar-nav {
   -webkit-backface-visibility: hidden; }
+
+#menu img {
+  width: 60%;
+  position: relative;
+  top: -5px; }
 
 #about {
   padding-top: 5vh;
@@ -209,13 +223,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
+  max-width: 70%;
   padding-bottom: 4%; }
 
 @media screen and (min-width: 768px) {
   .modal-lg {
     width: 70%;
     /* either % (e.g. 60%) or px (400px) */ } }
+.laerdal {
+  width: 250px; }
+
 .tint {
   position: relative;
   cursor: pointer;
@@ -344,9 +361,6 @@
 body {
   max-width: 100%;
   overflow-x: hidden; }
-
-p {
-  font-size: 120%; }
 
 .center {
   display: block;
@@ -550,7 +564,10 @@ footer {
     height: 150px; }
 
   #video {
-    width: 100%; } }
+    width: 100%; }
+
+  #chartContainer, #chartContainer2 {
+    height: 300px; } }
 @media only screen and (max-width: 992px) {
   h3, p {
     margin-right: 5%;
@@ -558,6 +575,11 @@ footer {
 
   p {
     font-size: 100%; }
+
+  .main-button {
+    width: 300px; }
+    .main-button a {
+      font-size: 15px; }
 
   .tint, .profile-pic, .btn-more {
     display: block;
@@ -604,5 +626,9 @@ footer {
   padding: 5vh; }
   #contact p {
     margin-bottom: 10%; }
+
+@media only screen and (min-width: 1920px) {
+  p {
+    font-size: 120%; } }
 
 /*# sourceMappingURL=main.css.map */

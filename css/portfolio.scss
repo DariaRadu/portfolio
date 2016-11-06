@@ -17,6 +17,7 @@
 }
 
 //modals
+
 .modal-content{
   border-radius: 0;
   background-color:$yankeesblue;
@@ -59,7 +60,7 @@
 
 .modal-img{
   @include center-image();
-  max-width:80%;
+  max-width:70%;
   padding-bottom:4%;
 }
 
@@ -68,6 +69,11 @@
     width: 70%; /* either % (e.g. 60%) or px (400px) */
   }
 }
+
+.laerdal{
+  width:250px;
+}
+
 //
 
 .tint {
